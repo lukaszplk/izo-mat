@@ -1,0 +1,125 @@
+{% extends "base.html" %}
+
+{% block title %}{{ service.title }} - IZO-MAT{% endblock %}
+
+{% block meta_description %}{{ service.description }}. Profesjonalne usługi w Tarnowie i okolicach.{% endblock %}
+
+{% block content %}
+<!-- Page Header -->
+<section class="page-header bg-primary text-white py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold">{{ service.title }}</h1>
+                <p class="lead">{{ service.description }}</p>
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb bg-transparent p-0">
+                        <li class="breadcrumb-item"><a href="{{ url_for('index') }}" class="text-white-50">Strona główna</a></li>
+                        <li class="breadcrumb-item"><span class="text-white-50">Oferta</span></li>
+                        <li class="breadcrumb-item active text-white">{{ service.title }}</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('wycena') }}" class="btn btn-warning btn-lg">
+                    <i class="fas fa-calculator me-2"></i>Zamów wycenę
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Service Details -->
+<section class="service-details py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="service-content">
+                    <h2 class="mb-4">Co oferujemy?</h2>
+                    <div class="row g-4">
+                        {% for feature in service.features %}
+                        <div class="col-md-6">
+                            <div class="feature-item d-flex">
+                                <div class="feature-icon me-3">
+                                    <i class="fas fa-check-circle text-success fa-lg"></i>
+                                </div>
+                                <div>
+                                    <h6>{{ feature }}</h6>
+                                </div>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                    
+                    <hr class="my-5">
+                    
+                    <h2 class="mb-4">Proces realizacji</h2>
+                    <div class="process-steps">
+                        {% for step in service.process %}
+                        <div class="process-step d-flex mb-3">
+                            <div class="step-number me-3">
+                                <span class="badge bg-primary rounded-circle">{{ loop.index }}</span>
+                            </div>
+                            <div>
+                                <p class="mb-0">{{ step }}</p>
+                            </div>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4">
+                <div class="service-sidebar">
+                    <!-- Contact Card -->
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Potrzebujesz pomocy?</h5>
+                            <p class="card-text">Skontaktuj się z nami i otrzymaj profesjonalne doradztwo</p>
+                            <a href="tel:+48606900346" class="btn btn-primary w-100 mb-2">
+                                <i class="fas fa-phone me-2"></i>+48 606 900 346
+                            </a>
+                            <a href="mailto:izomatrs@op.pl" class="btn btn-outline-primary w-100">
+                                <i class="fas fa-envelope me-2"></i>Napisz do nas
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <!-- Other Services -->
+                    <div class="card">
+                        <div class="card-header">
+                            <h5 class="mb-0">Inne usługi</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li class="mb-2"><a href="{{ url_for('hydroizolacje') }}" class="text-decoration-none">Hydroizolacje</a></li>
+                                <li class="mb-2"><a href="{{ url_for('osuszanie') }}" class="text-decoration-none">Osuszanie budynków</a></li>
+                                <li class="mb-2"><a href="{{ url_for('izolacje_zbiornikow') }}" class="text-decoration-none">Izolacje zbiorników</a></li>
+                                <li class="mb-2"><a href="{{ url_for('izolacje_kurtynowe') }}" class="text-decoration-none">Izolacje kurtynowe</a></li>
+                                <li class="mb-2"><a href="{{ url_for('izolacje_dachow') }}" class="text-decoration-none">Izolacje dachów</a></li>
+                                <li class="mb-2"><a href="{{ url_for('posadzki_zywicze') }}" class="text-decoration-none">Posadzki żywicze</a></li>
+                                <li><a href="{{ url_for('iniekcja_rys') }}" class="text-decoration-none">Iniekcja rys i pęknięć</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- CTA Section -->
+<section class="cta-section py-5 bg-light">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h3 class="mb-2">Zainteresowany usługą: {{ service.title }}?</h3>
+                <p class="mb-0">Skontaktuj się z nami i otrzymaj bezpłatną wycenę</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a href="{{ url_for('wycena') }}" class="btn btn-primary btn-lg">Zamów wycenę</a>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
