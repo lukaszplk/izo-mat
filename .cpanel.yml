@@ -4,4 +4,3 @@ deployment:
     - cp config.php ../public_html/
     - cp *.php ../public_html/
     - cp -r static ../public_html/
-    - cp README.md ../public_html/
