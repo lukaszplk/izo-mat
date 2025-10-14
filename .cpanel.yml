@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - cp config.php ../public_html/
-    - cp *.php ../public_html/
-    - cp -r static ../public_html/
+    - export DEPLOYPATH=/home/ifbstrjf/public_html/
+    - /bin/cp config.php $DEPLOYPATH
+    - /bin/cp *.php $DEPLOYPATH
+    - /bin/cp -R static $DEPLOYPATH
