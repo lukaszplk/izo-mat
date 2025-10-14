@@ -1,218 +1,97 @@
-# IZO-MAT Flask Website - Improved Version
+# IZO-MAT Website - PHP Version
 
-This is an improved version of the IZO-MAT website built with Flask, featuring modern design and responsive layout.
+Professional website for IZO-MAT - hydroizolacje, osuszanie budynków, izolacje zbiorników w Tarnowie i Dąbrowie Tarnowskiej.
 
-## Features
+## 🏢 About IZO-MAT
 
-### ✨ Improvements over Original Website
+IZO-MAT specializes in hydroizolacje and building drying services since 2003. We offer comprehensive insulation services throughout Poland with the highest quality guarantee.
 
-1. **Modern Design**
-   - Clean, professional layout
-   - Responsive design for all devices
-   - Modern typography and color scheme
-   - Improved user experience
+## 🌐 Website Features
 
-2. **Better Content Organization**
-   - Clear navigation structure
-   - Well-organized service pages
-   - Professional portfolio section
-   - Streamlined contact information
+### ✨ Modern Design
+- Clean, professional layout
+- Responsive design for all devices
+- Modern typography and color scheme
+- Improved user experience
 
-3. **Technical Improvements**
-   - Fast loading times
-   - SEO-optimized structure
-   - Accessible design
-   - Clean, semantic HTML
+### 📱 Responsive & Fast
+- Mobile-friendly design
+- Fast loading times
+- SEO-optimized structure
+- Accessible design
 
-4. **Enhanced Functionality**
-   - Interactive quote request form
-   - Contact form with validation
-   - Responsive image galleries
-   - Smooth scrolling and animations
+### 🔧 Functionality
+- Interactive quote request form
+- Contact form with validation
+- Service pages with detailed information
+- Professional portfolio section
 
-## Project Structure
+## 📁 Project Structure
 
 ```
-izo-mat-flask/
-├── app.py                 # Main Flask application
-├── requirements.txt       # Python dependencies
-├── run.bat               # Windows run script
-├── static/
-│   ├── css/
-│   │   └── style.css     # Custom CSS styles
-│   ├── js/
-│   │   └── main.js       # JavaScript functionality
-│   └── images/           # Website images
-└── templates/
-    ├── base.html         # Base template
-    ├── index.html        # Homepage
-    ├── service.html      # Service page template
-    ├── wycena.html       # Quote request page
-    └── ...               # Other templates
+izo-mat/
+├── config.php              # Configuration and data
+├── index.php               # Homepage
+├── hydroizolacje.php       # Hydroizolacje service page
+├── osuszanie.php           # Osuszanie budynków service page
+├── izolacje-zbiornikow.php # Izolacje zbiorników service page
+├── izolacje-kurtynowe.php  # Izolacje kurtynowe service page
+├── kontakt.php             # Contact page
+├── wycena.php              # Quote request page
+├── contact-handler.php     # Contact form processor
+└── static/
+    ├── css/
+    │   └── style.css       # Custom CSS styles
+    ├── js/
+    │   └── main.js         # JavaScript functionality
+    └── images/             # Website images
 ```
 
-## Installation and Setup
+## 🚀 Deployment
 
-1. **Prerequisites**
-   - Python 3.7 or higher
-   - pip (Python package installer)
+### Requirements
+- PHP 7.4+ (most shared hosting supports this)
+- Web server (Apache/Nginx)
+- Email functionality (for contact forms)
 
-2. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
+### Installation
+1. Upload all files to your web server's public directory
+2. Ensure `static/` folder has proper permissions
+3. Test contact forms to ensure email works
+4. Configure SSL certificate (recommended)
 
-3. **Run the Application**
-   
-   **Option 1: HTTP (Basic)**
-   ```bash
-   python app.py
-   ```
-   Access at: `http://127.0.0.1:5000`
-   
-   **Option 2: HTTPS (Secure)**
-   ```bash
-   pip install pyopenssl
-   python app.py
-   ```
-   Access at: `https://127.0.0.1:5000`
-   
-   **Option 3: Using batch files (Windows)**
-   - `run.bat` - HTTP version
-   - `run-secure.bat` - HTTPS version (installs pyopenssl automatically)
+### Hosting Compatibility
+- ✅ Shared hosting (Webd.pl, etc.)
+- ✅ VPS hosting
+- ✅ Dedicated servers
+- ✅ Cloud hosting
 
-4. **Security Considerations**
-   - **Development**: The app includes security headers and HTTPS support
-   - **Browser Warnings**: Self-signed certificates will trigger warnings in browsers
-   - **Production**: Never use Flask's development server in production
+## 📞 Contact Information
 
-## Key Improvements Made
+**IZO-MAT**
+- **Phone**: +48 606 900 346
+- **Email**: izomatrs@op.pl
+- **Offices**: Tarnów, Dąbrowa Tarnowska
 
-### 🎨 Design & User Experience
-- **Modern UI**: Replaced outdated design with contemporary layout
-- **Responsive Design**: Mobile-first approach ensuring compatibility across all devices
-- **Professional Typography**: Improved readability and hierarchy
-- **Color Scheme**: Professional blue and gold color palette
-- **Navigation**: Intuitive menu structure with dropdown for services
+## 🛠️ Services Offered
 
-### 📱 Mobile Optimization
-- Responsive navigation with mobile menu
-- Touch-friendly buttons and links
-- Optimized images for different screen sizes
-- Mobile-specific layout adjustments
+- **Hydroizolacje** - Building waterproofing
+- **Osuszanie budynków** - Building drying
+- **Izolacje zbiorników** - Tank insulation
+- **Izolacje kurtynowe** - Curtain insulation
+- **Izolacje dachów** - Roof insulation
+- **Posadzki żywicze** - Resin floors
+- **Iniekcja rys i pęknięć** - Crack injection
 
-### ⚡ Performance
-- Optimized CSS and JavaScript
-- Lazy loading for images
-- Minified assets for faster loading
-- Efficient Flask routing
+## 📄 License
 
-### 🔍 SEO Improvements
-- Semantic HTML structure
-- Meta tags optimization
-- Structured data for local business
-- Clean URL structure
-- Proper heading hierarchy
+© 2024 IZO-MAT. All rights reserved.
 
-### 🚀 Functionality
-- **Interactive Forms**: Quote request and contact forms with validation
-- **Smooth Animations**: CSS transitions and scroll animations
-- **Modern JavaScript**: ES6+ features for better performance
-- **API Endpoints**: RESTful endpoints for form submissions
+## 🔧 Technical Details
 
-## Available Pages
-
-1. **Homepage** (`/`) - Overview of services and company
-2. **Services** - Individual pages for each service:
-   - Hydroizolacje (`/hydroizolacje`)
-   - Osuszanie budynków (`/osuszanie`)
-   - Izolacje zbiorników (`/izolacje-zbiornikow`)
-   - Izolacje kurtynowe (`/izolacje-kurtynowe`)
-   - Izolacje dachów (`/izolacje-dachow`)
-   - Posadzki żywicze (`/posadzki-zywicze`)
-   - Iniekcja rys i pęknięć (`/iniekcja-rys`)
-3. **Portfolio** (`/realizacje`) - Showcase of completed projects
-4. **About** (`/o-firmie`) - Company information
-5. **Contact** (`/kontakt`) - Contact information and map
-6. **Quote** (`/wycena`) - Request quote form
-
-## Configuration
-
-### Development
-- Debug mode is enabled by default
-- Server runs on `127.0.0.1:5000`
-- Auto-reload on code changes
-
-### Production Deployment
-For production deployment, you should:
-1. Set `DEBUG = False` in `app.py`
-2. Use a production WSGI server (e.g., Gunicorn)
-3. Configure proper database for form submissions
-4. Set up email functionality for contact forms
-5. Use environment variables for sensitive configuration
-
-## Customization
-
-### Adding New Services
-1. Add route in `app.py`
-2. Create service data dictionary
-3. Use the `service.html` template
-
-### Modifying Styles
-- Edit `static/css/style.css` for custom styles
-- CSS variables are defined in `:root` for easy theming
-
-### Adding New Pages
-1. Create route in `app.py`
-2. Create corresponding template in `templates/`
-3. Update navigation in `base.html`
-
-## Security and "Unsafe" Warnings
-
-### Why Browsers Show "Not Secure" Warning
-
-When you run the Flask development server locally, browsers may show security warnings for these reasons:
-
-1. **HTTP vs HTTPS**: Development server uses HTTP by default
-2. **Self-signed certificates**: No certificate authority validation
-3. **Development environment**: Flask dev server isn't hardened for production
-4. **Local IP address**: Browsers are cautious with localhost connections
-
-### How to Make It "Secure"
-
-**Option 1: Use HTTPS (Recommended)**
-```bash
-run-secure.bat  # This installs pyopenssl and runs with HTTPS
-```
-
-**Option 2: Accept HTTP for Development**
-- The site is safe for local development
-- Browser warnings are normal for development servers
-- Data stays on your local machine
-
-**Option 3: Production Deployment**
-For a truly secure public website, deploy to a proper web server with:
-- Valid SSL certificate from a Certificate Authority
-- Production WSGI server (Gunicorn, uWSGI)
-- Reverse proxy (Nginx, Apache)
-- Proper security configuration
-
-### Browser Security Override
-
-If using HTTP for development:
-1. Click "Advanced" in the browser warning
-2. Click "Proceed to 127.0.0.1 (unsafe)"
-3. The site will work normally for testing
-
-**Note**: These warnings are normal for development and don't affect the functionality of your local test site.
-
-## Contact
-
-For questions about this implementation:
-- Original website: http://izo-mat.pl
-- Phone: +48 606 900 346
-- Email: izomatrs@op.pl
-
----
-
-**Note**: This is an improved version created for demonstration purposes. The original IZO-MAT website and company information remain unchanged.
+- **Language**: PHP 7.4+
+- **Frontend**: HTML5, CSS3, JavaScript
+- **Framework**: Bootstrap 5.3.2
+- **Icons**: Font Awesome 6.4.0
+- **Responsive**: Mobile-first design
+- **SEO**: Optimized meta tags and structure
