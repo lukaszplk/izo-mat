@@ -1,6 +1,7 @@
 ---
 deployment:
   tasks:
-    - export FLASK_APP=app.py
-    - pip install -r requirements.txt
-    - python app.py
+    - cp config.php ../public_html/
+    - cp *.php ../public_html/
+    - cp -r static ../public_html/
+    - cp README.md ../public_html/
