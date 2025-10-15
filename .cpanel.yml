@@ -2,7 +2,33 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/ifbstrjf/public_html/
-    - /bin/cp config.php $DEPLOYPATH
-    - /bin/cp *.php $DEPLOYPATH
+    
+    # Copy main files
+    - /bin/cp index.php $DEPLOYPATH
+    - /bin/cp version-selector.php $DEPLOYPATH
+    - /bin/cp README.md $DEPLOYPATH
+    - /bin/cp VERSION-MANAGER-README.md $DEPLOYPATH
     - /bin/cp .htaccess $DEPLOYPATH
-    - /bin/cp -R static $DEPLOYPATH
+    
+    # Copy Version A
+    - /bin/cp -R version-a $DEPLOYPATH
+    
+    # Copy Version B  
+    - /bin/cp -R version-b $DEPLOYPATH
+    
+    # Copy Version C (original)
+    - /bin/cp -R version-c $DEPLOYPATH
+    
+    # Copy Version C Layout Experiments
+    - /bin/cp -R version-c-magazine $DEPLOYPATH
+    - /bin/cp -R version-c-dashboard $DEPLOYPATH
+    - /bin/cp -R version-c-portfolio $DEPLOYPATH
+    
+    # Set proper permissions
+    - /bin/chmod -R 755 $DEPLOYPATH
+    - /bin/chmod 644 $DEPLOYPATH/*.php
+    - /bin/chmod 644 $DEPLOYPATH/*.md
+    - /bin/chmod 644 $DEPLOYPATH/.htaccess
+    
+    # Create backup of current deployment
+    - /bin/cp -R $DEPLOYPATH $DEPLOYPATH.backup.$(date +%Y%m%d_%H%M%S) || true
