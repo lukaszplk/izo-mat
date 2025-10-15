@@ -4,4 +4,5 @@ deployment:
     - export DEPLOYPATH=/home/ifbstrjf/public_html/
     - /bin/cp config.php $DEPLOYPATH
     - /bin/cp *.php $DEPLOYPATH
+    - /bin/cp .htaccess $DEPLOYPATH
     - /bin/cp -R static $DEPLOYPATH

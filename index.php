@@ -114,13 +114,13 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                         <div class="col-lg-6">
                             <div class="hero-content">
                                 <h1 class="display-4 fw-bold text-white mb-4">
-                                    Profesjonalne <span class="text-warning">Hydroizolacje</span> i Osuszanie Budynków
+                                    Profesjonalne <span class="text-white">Hydroizolacje</span> i Osuszanie Budynków
                                 </h1>
                                 <p class="lead text-white mb-4">
                                     Specjalizujemy się w hydroizolacjach od 2003 roku. Oferujemy kompleksowe usługi izolacyjne na terenie całej Polski z gwarancją najwyższej jakości.
                                 </p>
                                 <div class="hero-buttons">
-                                    <a href="<?php echo url_for('wycena'); ?>" class="btn btn-warning btn-lg me-3">
+                                    <a href="<?php echo url_for('wycena'); ?>" class="btn btn-danger btn-lg me-3">
                                         <i class="fas fa-calculator me-2"></i>Bezpłatna wycena
                                     </a>
                                     <a href="tel:<?php echo $company_phone; ?>" class="btn btn-outline-light btn-lg">
