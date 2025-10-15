@@ -301,7 +301,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                     </div>
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <div class="about-image-placeholder bg-light rounded shadow d-flex align-items-center justify-content-center" style="height: 300px; border: 2px dashed #dc3545;">
+                            <div class="about-image-placeholder bg-light rounded shadow d-flex align-items-center justify-content-center" style="height: 300px;">
                                 <div class="text-center text-muted">
                                     <i class="fas fa-building fa-3x mb-3 text-primary"></i>
                                     <h5>About Image Placeholder</h5>
@@ -371,7 +371,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                     <?php foreach(array_slice($portfolio, 0, 3) as $item): ?>
                     <div class="col-lg-4 col-md-6">
                         <div class="portfolio-item">
-                            <div class="portfolio-image-placeholder bg-light rounded d-flex align-items-center justify-content-center mb-3" style="height: 250px; border: 2px dashed #dc3545;">
+                            <div class="portfolio-image-placeholder bg-light rounded d-flex align-items-center justify-content-center mb-3" style="height: 250px;">
                                 <div class="text-center text-muted">
                                     <i class="fas fa-tools fa-2x mb-2 text-primary"></i>
                                     <h6><?php echo htmlspecialchars($item['title']); ?></h6>
