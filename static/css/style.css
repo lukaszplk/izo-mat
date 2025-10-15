@@ -553,6 +553,25 @@ body {
     box-shadow: 0 0.5rem 1rem rgba(255, 255, 255, 0.15);
 }
 
+/* ===== PLACEHOLDER STYLES ===== */
+.logo-placeholder {
+    background: var(--primary-color) !important;
+    color: var(--white) !important;
+}
+
+.hero-image-placeholder,
+.about-image-placeholder,
+.portfolio-image-placeholder {
+    transition: all 0.3s ease;
+}
+
+.hero-image-placeholder:hover,
+.about-image-placeholder:hover,
+.portfolio-image-placeholder:hover {
+    border-color: var(--primary-color) !important;
+    background: var(--light-bg) !important;
+}
+
 /* ===== RESPONSIVE DESIGN ===== */
 @media (max-width: 768px) {
     .hero-section {

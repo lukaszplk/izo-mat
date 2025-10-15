@@ -59,7 +59,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
             <div class="container">
                 <a class="navbar-brand" href="<?php echo url_for('index'); ?>">
-                    <img src="<?php echo static_url('images/logo.png'); ?>" alt="IZO-MAT" height="50" class="me-2">
+                    <div class="logo-placeholder me-2 d-inline-block bg-primary text-white rounded px-2 py-1" style="width: 50px; height: 50px; line-height: 48px; text-align: center; font-weight: bold;">IZO</div>
                     <span class="fw-bold text-primary">IZO-MAT</span>
                 </a>
                 
@@ -329,7 +329,13 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                     </div>
                     <div class="col-lg-6">
                         <div class="about-image">
-                            <img src="<?php echo static_url('images/about-image.jpg'); ?>" alt="O firmie IZO-MAT" class="img-fluid rounded shadow">
+                            <div class="about-image-placeholder bg-light rounded shadow d-flex align-items-center justify-content-center" style="height: 300px; border: 2px dashed #dc3545;">
+                                <div class="text-center text-muted">
+                                    <i class="fas fa-building fa-3x mb-3 text-primary"></i>
+                                    <h5>About Image Placeholder</h5>
+                                    <p>Replace with your company image</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -486,7 +492,13 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                     <div class="col-lg-4 col-md-6">
                         <div class="portfolio-item">
                             <div class="portfolio-image">
-                                <img src="<?php echo static_url('images/' . $item['image']); ?>" alt="<?php echo htmlspecialchars($item['title']); ?>" class="img-fluid rounded">
+                                <div class="portfolio-image-placeholder bg-light rounded d-flex align-items-center justify-content-center" style="height: 250px; border: 2px dashed #dc3545;">
+                                    <div class="text-center text-muted">
+                                        <i class="fas fa-tools fa-2x mb-2 text-primary"></i>
+                                        <h6><?php echo htmlspecialchars($item['title']); ?></h6>
+                                        <small><?php echo htmlspecialchars($item['description']); ?></small>
+                                    </div>
+                                </div>
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-content">
                                         <h5><?php echo htmlspecialchars($item['title']); ?></h5>
