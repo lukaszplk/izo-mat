@@ -120,7 +120,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                                     </span>
                                 </div>
                                 <h1 class="display-4 fw-bold text-white mb-4">
-                                    Profesjonalne <span class="text-warning">Hydroizolacje 1</span> i Osuszanie Budynków
+                                    Profesjonalne <span class="text-warning">Hydroizolacje 2</span> i Osuszanie Budynków
                                 </h1>
                                 <p class="lead text-white mb-4">
                                     Specjalizujemy się w hydroizolacjach od 2003 roku. Oferujemy kompleksowe usługi izolacyjne na terenie całej Polski z gwarancją najwyższej jakości i nowoczesnymi technologiami.
