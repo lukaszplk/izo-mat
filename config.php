@@ -199,7 +199,10 @@ $contact_info = [
 
 // Helper functions
 function url_for($page) {
-    $base_url = '/';
+    // Detect if we're running locally (XAMPP) or on server
+    $is_local = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+    $base_url = $is_local ? '/izo-mat/' : '/';
+    
     switch($page) {
         case 'index':
             return $base_url;
@@ -235,7 +238,10 @@ function url_for($page) {
 }
 
 function static_url($file) {
-    return '/static/' . $file;
+    // Detect if we're running locally (XAMPP) or on server
+    $is_local = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
+    $base_path = $is_local ? '/izo-mat/' : '/';
+    return $base_path . 'static/' . $file;
 }
 
 // Get current page
