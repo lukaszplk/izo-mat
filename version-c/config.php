@@ -240,7 +240,7 @@ function url_for($page) {
 function static_url($file) {
     // Detect if we're running locally (XAMPP) or on server
     $is_local = strpos($_SERVER['HTTP_HOST'], 'localhost') !== false;
-    $base_path = $is_local ? '/izo-mat/' : '/';
+    $base_path = $is_local ? '/izo-mat/version-c/' : '/version-c/';
     return $base_path . 'static/' . $file;
 }
 
