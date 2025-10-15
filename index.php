@@ -109,18 +109,46 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
         <!-- Hero Section -->
         <section class="hero-section">
             <div class="hero-background">
+                <div class="hero-particles"></div>
                 <div class="container">
                     <div class="row align-items-center min-vh-75">
                         <div class="col-lg-6">
                             <div class="hero-content">
+                                <div class="hero-badge mb-3">
+                                    <span class="badge bg-warning text-dark px-3 py-2">
+                                        <i class="fas fa-award me-2"></i>Doświadczenie od 2003 roku
+                                    </span>
+                                </div>
                                 <h1 class="display-4 fw-bold text-white mb-4">
-                                    Profesjonalne <span class="text-white">Hydroizolacje</span> i Osuszanie Budynków
+                                    Profesjonalne <span class="text-warning">Hydroizolacje 1</span> i Osuszanie Budynków
                                 </h1>
                                 <p class="lead text-white mb-4">
-                                    Specjalizujemy się w hydroizolacjach od 2003 roku. Oferujemy kompleksowe usługi izolacyjne na terenie całej Polski z gwarancją najwyższej jakości.
+                                    Specjalizujemy się w hydroizolacjach od 2003 roku. Oferujemy kompleksowe usługi izolacyjne na terenie całej Polski z gwarancją najwyższej jakości i nowoczesnymi technologiami.
                                 </p>
+                                <div class="hero-stats mb-4">
+                                    <div class="row text-center">
+                                        <div class="col-4">
+                                            <div class="stat-item">
+                                                <h3 class="text-warning fw-bold mb-0">500+</h3>
+                                                <small class="text-white-50">Zrealizowanych projektów</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="stat-item">
+                                                <h3 class="text-warning fw-bold mb-0">21</h3>
+                                                <small class="text-white-50">Lat doświadczenia</small>
+                                            </div>
+                                        </div>
+                                        <div class="col-4">
+                                            <div class="stat-item">
+                                                <h3 class="text-warning fw-bold mb-0">100%</h3>
+                                                <small class="text-white-50">Zadowolonych klientów</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="hero-buttons">
-                                    <a href="<?php echo url_for('wycena'); ?>" class="btn btn-danger btn-lg me-3">
+                                    <a href="<?php echo url_for('wycena'); ?>" class="btn btn-light btn-lg me-3 pulse-btn">
                                         <i class="fas fa-calculator me-2"></i>Bezpłatna wycena
                                     </a>
                                     <a href="tel:<?php echo $company_phone; ?>" class="btn btn-outline-light btn-lg">
@@ -131,7 +159,18 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                         </div>
                         <div class="col-lg-6">
                             <div class="hero-image">
-                                <img src="<?php echo static_url('images/hero-image.jpg'); ?>" alt="Hydroizolacje budynków" class="img-fluid rounded shadow">
+                                <div class="hero-image-container">
+                                    <img src="<?php echo static_url('images/hero-image.jpg'); ?>" alt="Hydroizolacje budynków" class="img-fluid rounded shadow">
+                                    <div class="hero-floating-card">
+                                        <div class="card bg-white shadow-lg">
+                                            <div class="card-body text-center">
+                                                <i class="fas fa-shield-alt text-primary fa-2x mb-2"></i>
+                                                <h6 class="card-title">Gwarancja jakości</h6>
+                                                <p class="card-text small">Wszystkie nasze prace objęte są gwarancją</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -340,8 +379,100 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
             </div>
         </section>
 
+        <!-- Testimonials Section -->
+        <section class="testimonials-section py-5 bg-light">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-lg-8 mx-auto text-center">
+                        <h2 class="display-5 fw-bold mb-3">Co Mówią Nasi Klienci</h2>
+                        <p class="lead text-muted">Opinie zadowolonych klientów, którzy zaufali naszym usługom</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="testimonial-rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">"Profesjonalne podejście, terminowe wykonanie i najwyższa jakość materiałów. Polecam IZO-MAT wszystkim, którzy potrzebują hydroizolacji."</p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar me-3">
+                                        <div class="avatar-circle bg-primary text-white d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Jan Kowalski</h6>
+                                        <small class="text-muted">Właściciel domu jednorodzinnego</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="testimonial-rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">"Świetna firma! Rozwiązali problem z wilgocią w naszej piwnicy. Prace wykonane szybko i solidnie. Na pewno skorzystamy ponownie."</p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar me-3">
+                                        <div class="avatar-circle bg-primary text-white d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Anna Nowak</h6>
+                                        <small class="text-muted">Właścicielka mieszkania</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-4 col-md-6">
+                        <div class="testimonial-card card h-100 border-0 shadow-sm">
+                            <div class="card-body p-4">
+                                <div class="testimonial-rating mb-3">
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                    <i class="fas fa-star text-warning"></i>
+                                </div>
+                                <p class="testimonial-text mb-4">"Kompleksowa obsługa od wyceny po realizację. Fachowa wiedza i nowoczesne metody. Polecam wszystkim!"</p>
+                                <div class="testimonial-author d-flex align-items-center">
+                                    <div class="author-avatar me-3">
+                                        <div class="avatar-circle bg-primary text-white d-flex align-items-center justify-content-center">
+                                            <i class="fas fa-user"></i>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <h6 class="mb-0">Piotr Wiśniewski</h6>
+                                        <small class="text-muted">Dyrektor firmy budowlanej</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Portfolio Preview -->
-        <section class="portfolio-preview py-5 bg-light">
+        <section class="portfolio-preview py-5">
             <div class="container">
                 <div class="row mb-5">
                     <div class="col-lg-8 mx-auto text-center">
@@ -384,7 +515,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                         <p class="mb-0">Skontaktuj się z nami już dziś i otrzymaj bezpłatną wycenę</p>
                     </div>
                     <div class="col-lg-4 text-lg-end">
-                        <a href="<?php echo url_for('wycena'); ?>" class="btn btn-warning btn-lg">Zamów wycenę</a>
+                        <a href="<?php echo url_for('wycena'); ?>" class="btn btn-light btn-lg">Zamów wycenę</a>
                         <a href="tel:<?php echo $company_phone; ?>" class="btn btn-outline-light btn-lg ms-2">Zadzwoń</a>
                     </div>
                 </div>

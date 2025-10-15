@@ -45,13 +45,34 @@ document.addEventListener('DOMContentLoaded', function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('fade-in-up');
+                
+                // Animate counters in hero stats
+                if (entry.target.classList.contains('stat-item')) {
+                    animateCounter(entry.target.querySelector('h3'));
+                }
             }
         });
     }, observerOptions);
 
     // Observe elements for animation
-    const animatedElements = document.querySelectorAll('.service-card, .feature-item, .process-step, .portfolio-item');
+    const animatedElements = document.querySelectorAll('.service-card, .feature-item, .process-step, .portfolio-item, .testimonial-card, .stat-item');
     animatedElements.forEach(el => observer.observe(el));
+
+    // ===== COUNTER ANIMATION =====
+    function animateCounter(element) {
+        const target = parseInt(element.textContent.replace(/\D/g, ''));
+        const suffix = element.textContent.replace(/\d/g, '');
+        let current = 0;
+        const increment = target / 50;
+        const timer = setInterval(() => {
+            current += increment;
+            if (current >= target) {
+                current = target;
+                clearInterval(timer);
+            }
+            element.textContent = Math.floor(current) + suffix;
+        }, 30);
+    }
 
     // ===== MOBILE MENU CLOSE ON CLICK =====
     const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
