@@ -47,9 +47,7 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                         </div>
                     </div>
                     <div class="col-md-3 text-end">
-                        <a href="#" class="text-white me-2"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+                        <!-- Social media links removed -->
                     </div>
                 </div>
             </div>
@@ -542,11 +540,6 @@ $page_description = "Profesjonalne hydroizolacje budynków w Tarnowie i Dąbrowi
                 <div class="col-lg-3 col-md-6 mb-4">
                     <h5 class="text-primary">IZO-MAT</h5>
                     <p>Specjalizujemy się w hydroizolacjach od 2003 roku. Oferujemy kompleksowe usługi izolacyjne na terenie całej Polski.</p>
-                    <div class="social-links">
-                        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
-                        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
-                        <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
-                    </div>
                 </div>
                 
                 <div class="col-lg-3 col-md-6 mb-4">
